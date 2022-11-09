@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  
+  <head>
+    
+    <title>HTML5 Canvas</title>
+    
+    <script> //Inicia el codigo JavaScript
+      function draw(){ //Funcion que dibujara los elementos 2D
+        
+        var canva = document.getElementById('ejemplo'); // Primero se recupera el objeto canva
+        var context = canva.getContext('2d'); // Luego se le indica el contexto "2D"
+
+        // Cuadrado
+        context.fillStyle = "rgb(0,255,0)";
+        context.fillRect (10, 50, 100, 100);
+        //Circulo
+        context.fillStyle = "rgba(255,0,0, 0.6)";
+        context.beginPath();
+        context.arc(180,100,50,0,Math.PI*2,true);
+        context.fill();
+        //Triangulo
+        context.fillStyle = "rgba(0,0,255, 0.6)";
+        context.beginPath();
+        context.moveTo(240,150);
+        context.lineTo(340,150);
+        context.lineTo(290,50);
+        context.lineTo(290,50);
+        context.fill();
+      }
+    </script> <!--Termina el codigo JavaScript-->
+    
+    <style type="text/css"> 
+      canvas { border: 2px solid black; } /* Da borde al lienzo para diferenciarlo del fondo */
+    </style>
+  
+  </head>
+
+ <body onload="draw();"> <!--Se carga la funcion que dibuja los elementos 2D-->
+    <canvas id="ejemplo" width="360" height="200"> <!--Tamaño del canva-->
+      Tu navegador no soporta canvas
+    </canvas>
+ 
+  </body>
+</html>
