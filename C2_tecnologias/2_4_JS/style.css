@@ -1,0 +1,19 @@
+body{
+   
+}
+
+p{
+    font-size: medium;
+}
+
+button.azul{
+    background-color: blueviolet;
+}
+
+button.amarillo{
+    background-color: yellow;
+}
+
+button.naranja{
+    background-color: orangered;
+}

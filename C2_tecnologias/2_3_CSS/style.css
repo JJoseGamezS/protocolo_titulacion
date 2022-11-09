@@ -1,0 +1,22 @@
+body{
+    margin: 10;
+}
+
+h1{ /*Formato que se le dara a las etiquetas <H1> del HTML*/
+    font-size: large; /*Tamaño de fuente*/
+    color: blue; /*Color de fuente*/
+    padding-top: 5%; /*Espacio superior*/
+    padding-left: 5%;/*Espacio del lado izquierdo*/
+    text-transform: uppercase; /*Trasforma texto a mayusculas*/
+    margin: 0%; /*Margen*/
+}
+
+p{ /*Formato que se el dara a las etiquetas <p>*/
+    font-size: 45px; ;
+    color: green;
+    font-weight: bold; /*Fuente en negrita*/
+    font-family: Arial; /*Fuente que se utiliza*/
+    text-align: justify; /*Justificacion del texto*/
+    word-spacing: 10%; /*Espaciado*/
+
+}
